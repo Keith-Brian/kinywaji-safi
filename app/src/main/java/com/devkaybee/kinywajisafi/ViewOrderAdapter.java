@@ -44,10 +44,10 @@ public class ViewOrderAdapter extends RecyclerView.Adapter<ViewOrderAdapter.View
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            branchName = findViewById(R.id.txtBranchName);
-            brandName = findViewById(R.id.txtBrandName);
-            selectedSize = findViewById(R.id.txtSize);
-            itemPrice = findViewById(R.id.txtprice);
+            branchName = branchName.findViewById(R.id.txtBranchName);
+            brandName = brandName.findViewById(R.id.txtBrandName);
+            selectedSize = selectedSize.findViewById(R.id.txtSize);
+            itemPrice = itemPrice.findViewById(R.id.txtprice);
         }
     }
 }
