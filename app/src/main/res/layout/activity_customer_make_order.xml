@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerMakeOrder">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/orderHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Proceed to Make an Order"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilBranchLayout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/orderHeaderText"
+            android:layout_height="wrap_content"
+            android:hint="Select Branch"
+            tools:layout_editor_absoluteX="30dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/selectBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilBrandLayout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tilBranchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Brand"
+            tools:layout_editor_absoluteX="30dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/selectBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/selectSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tilBrandLayout"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Select Size below"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/smallSize"
+            android:text="Small - Ksh. 30"
+            android:layout_below="@id/selectSize"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mediumSize"
+            android:text="Medium - Ksh. 45"
+            android:layout_below="@id/smallSize"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bigiSze"
+            android:text="Large- Ksh. 60"
+            android:layout_below="@id/mediumSize"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/makeOrder"
+            android:text="Make Order"
+            android:layout_below="@id/bigiSze"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

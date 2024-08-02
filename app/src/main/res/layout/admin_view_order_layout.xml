@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:elevation="10.dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/branchDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brach Name:"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/txtBranchName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brach Name:"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/brandDetails"
+            android:layout_below="@id/branchDetails"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brand Name:"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/txtBrandName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coca-cola"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sizeDetails"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/brandDetails"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drink Size:"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/txtSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Madiaba:"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/priceDetails"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/sizeDetails"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/txtprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ksh. 3 so"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

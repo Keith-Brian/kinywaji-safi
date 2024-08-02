@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "29787196667",
+    "project_id": "kinywaji-safi",
+    "storage_bucket": "kinywaji-safi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29787196667:android:ec854015a0ffe21d19f45e",
+        "android_client_info": {
+          "package_name": "com.devkaybee.kinywajisafi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdp3SqpYeQzFy1uSuVpxb6lfnnIfbOSPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
